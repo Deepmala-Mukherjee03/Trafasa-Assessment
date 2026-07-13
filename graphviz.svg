@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="717pt" height="368pt" viewBox="0.00 0.00 717.00 368.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 364.2)">
+<title>ER</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-364.2 712.79,-364.2 712.79,4 -4,4"/>
+<text xml:space="preserve" text-anchor="middle" x="354.4" y="-344.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="13.00">ER Diagram: Purchase Order (PO) &amp; Goods Received Note (GRN)</text>
+<text xml:space="preserve" text-anchor="middle" x="354.4" y="-313.9" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="13.00">1:M = One-to-Many Relationship</text>
+<!-- PO -->
+<g id="node1" class="node">
+<title>PO</title>
+<polygon fill="lightblue" stroke="black" points="259.92,-90 158.95,-90 158.95,-54 259.92,-54 259.92,-90"/>
+<text xml:space="preserve" text-anchor="middle" x="209.43" y="-75.3" font-family="Helvetica,sans-Serif" font-size="11.00">PO_ITEMS</text>
+<text xml:space="preserve" text-anchor="middle" x="209.43" y="-62.1" font-family="Helvetica,sans-Serif" font-size="11.00">(Purchase Order)</text>
+</g>
+<!-- R1 -->
+<g id="node3" class="node">
+<title>R1</title>
+<polygon fill="lightyellow" stroke="black" points="430.05,-90 319.26,-72 430.05,-54 540.85,-72 430.05,-90"/>
+<text xml:space="preserve" text-anchor="middle" x="430.05" y="-68.7" font-family="Helvetica,sans-Serif" font-size="11.00">RECEIVED_AGAINST</text>
+</g>
+<!-- PO&#45;&gt;R1 -->
+<g id="edge1" class="edge">
+<title>PO-&gt;R1</title>
+<path fill="none" stroke="black" d="M260.31,-72C277.2,-72 296.81,-72 316.55,-72"/>
+<text xml:space="preserve" text-anchor="middle" x="289.59" y="-76.2" font-family="Times,serif" font-size="14.00">1:M</text>
+</g>
+<!-- GRN -->
+<g id="node2" class="node">
+<title>GRN</title>
+<polygon fill="lightblue" stroke="black" points="708.79,-198 577.85,-198 577.85,-162 708.79,-162 708.79,-198"/>
+<text xml:space="preserve" text-anchor="middle" x="643.32" y="-183.3" font-family="Helvetica,sans-Serif" font-size="11.00">GRN_ITEMS</text>
+<text xml:space="preserve" text-anchor="middle" x="643.32" y="-170.1" font-family="Helvetica,sans-Serif" font-size="11.00">(Goods Received Note)</text>
+</g>
+<!-- R1&#45;&gt;GRN -->
+<g id="edge2" class="edge">
+<title>R1-&gt;GRN</title>
+<path fill="none" stroke="black" d="M487.99,-81.09C505.5,-85.17 524.47,-90.94 540.85,-99 573.61,-115.13 605.54,-143.28 624.58,-161.78"/>
+</g>
+<!-- po_id -->
+<g id="node4" class="node">
+<title>po_id</title>
+<ellipse fill="none" stroke="black" cx="60.97" cy="-126" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="start" x="47.52" y="-123.7" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="11.00">po_id</text>
+</g>
+<!-- po_id&#45;&gt;PO -->
+<g id="edge3" class="edge">
+<title>po_id-&gt;PO</title>
+<path fill="none" stroke="black" d="M85.18,-117.44C104.86,-110.19 133.78,-99.53 158.65,-90.35"/>
+</g>
+<!-- item_code1 -->
+<g id="node5" class="node">
+<title>item_code1</title>
+<ellipse fill="none" stroke="black" cx="60.97" cy="-72" rx="41.3" ry="18"/>
+<text xml:space="preserve" text-anchor="start" x="35.6" y="-69.7" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="11.00">item_code</text>
+</g>
+<!-- item_code1&#45;&gt;PO -->
+<g id="edge4" class="edge">
+<title>item_code1-&gt;PO</title>
+<path fill="none" stroke="black" d="M102.38,-72C119.74,-72 140.2,-72 158.49,-72"/>
+</g>
+<!-- qty_ordered -->
+<g id="node6" class="node">
+<title>qty_ordered</title>
+<ellipse fill="none" stroke="black" cx="60.97" cy="-18" rx="60.97" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="60.97" y="-14.7" font-family="Helvetica,sans-Serif" font-size="11.00">quantity_ordered</text>
+</g>
+<!-- qty_ordered&#45;&gt;PO -->
+<g id="edge5" class="edge">
+<title>qty_ordered-&gt;PO</title>
+<path fill="none" stroke="black" d="M100.07,-32.05C117.95,-38.64 139.5,-46.59 158.66,-53.65"/>
+</g>
+<!-- grn_id -->
+<g id="node7" class="node">
+<title>grn_id</title>
+<ellipse fill="none" stroke="black" cx="430.05" cy="-288" rx="28.82" ry="18"/>
+<text xml:space="preserve" text-anchor="start" x="414.76" y="-285.7" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="11.00">grn_id</text>
+</g>
+<!-- grn_id&#45;&gt;GRN -->
+<g id="edge6" class="edge">
+<title>grn_id-&gt;GRN</title>
+<path fill="none" stroke="black" d="M458.81,-284.56C481.72,-280.94 514.61,-273.92 540.85,-261 573.61,-244.87 605.54,-216.72 624.58,-198.22"/>
+</g>
+<!-- grn_po_id -->
+<g id="node8" class="node">
+<title>grn_po_id</title>
+<ellipse fill="none" stroke="black" cx="430.05" cy="-234" rx="41.67" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="430.05" y="-230.7" font-family="Helvetica,sans-Serif" font-size="11.00">po_id (FK)</text>
+</g>
+<!-- grn_po_id&#45;&gt;GRN -->
+<g id="edge7" class="edge">
+<title>grn_po_id-&gt;GRN</title>
+<path fill="none" stroke="black" d="M467.19,-225.29C488.63,-220.09 516.32,-213.28 540.85,-207 552.68,-203.97 565.27,-200.68 577.41,-197.47"/>
+</g>
+<!-- item_code2 -->
+<g id="node9" class="node">
+<title>item_code2</title>
+<ellipse fill="none" stroke="black" cx="430.05" cy="-180" rx="56.41" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="430.05" y="-176.7" font-family="Helvetica,sans-Serif" font-size="11.00">item_code (FK)</text>
+</g>
+<!-- item_code2&#45;&gt;GRN -->
+<g id="edge8" class="edge">
+<title>item_code2-&gt;GRN</title>
+<path fill="none" stroke="black" d="M486.84,-180C514.71,-180 548.59,-180 577.6,-180"/>
+</g>
+<!-- qty_received -->
+<g id="node10" class="node">
+<title>qty_received</title>
+<ellipse fill="none" stroke="black" cx="430.05" cy="-126" rx="63.24" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="430.05" y="-122.7" font-family="Helvetica,sans-Serif" font-size="11.00">quantity_received</text>
+</g>
+<!-- qty_received&#45;&gt;GRN -->
+<g id="edge9" class="edge">
+<title>qty_received-&gt;GRN</title>
+<path fill="none" stroke="black" d="M479.2,-137.63C498.4,-142.32 520.69,-147.84 540.85,-153 552.68,-156.03 565.27,-159.32 577.41,-162.53"/>
+</g>
+</g>
+</svg>
